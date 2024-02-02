@@ -127,6 +127,6 @@ Make sure to read the CSS [source code](https://github.com/Fadi002/de4py/blob/ma
 
 If you need support or want to share your plugin with us, don't hesitate to reach out through our Discord server.
 
-Join us on [Discord](https://discord.gg/GCpHp2xs)
+Join us on [Discord](https://discord.gg/cYxxUHsbRm)
 
 </details>
