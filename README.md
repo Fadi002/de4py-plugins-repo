@@ -1,3 +1,7 @@
+> [!IMPORTANT]  
+> this project has been officially archived. It has been a rewarding experience to develop and share this project with the community. However, I’ve noticed that many users lack the necessary coding or reverse engineering experience to fully benefit from the project. This has led to an increase in basic questions and issues that detract from the project's original intent.
+
+---
 # [de4py plugins API Documentation](https://de4py.000.pe/plugins.html)
 <details>
 <summary>Deobfuscator Plugin</summary>
