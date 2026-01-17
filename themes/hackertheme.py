@@ -1,15 +1,15 @@
 # screenshot:
 # https://prnt.sc/-gQk1pG6AIDl
 
-from plugins.plugins import ThemePlugin
+from plugins import ThemePlugin
 
-class Hacker_Theme(ThemePlugin):
+class HackerTheme(ThemePlugin):
     def __init__(self):
-        super().__init__(
-            plugin_name="hacker theme",
-            creator="Fadi002",
-            link="https://github.com/Fadi002/de4py-plugins-repo/blob/main/themes/hackertheme.py",
-            qss="""
+        super().__init__()
+        self.name = "hacker theme"
+        self.creator = "Fadi002"
+        self.link = "https://github.com/Fadi002/de4py-plugins-repo/blob/main/themes/hackertheme.py"
+        self.qss = """
 QMainWindow,QWidget#CentralWidget,QWidget#MainContent {
 background-color:#000000
 }
@@ -66,8 +66,8 @@ background-color:rgba(0,0,0,160)
 }
 
 QFrame#NotificationFrame {
-qproperty-bordercolor:#00ff22;
-qproperty-borderwidth:2;
+qproperty-borderColor:#00ff22;
+qproperty-borderWidth:2;
 border-radius:14px;
 background:transparent
 }
@@ -121,7 +121,7 @@ border-radius:8px
 }
 
 QPushButton#HamburgerButton {
-background-color:rgba(100,100,100,0.1);
+background-color:rgba(100,100,100,0.5);
 color:#00ff22;
 border-radius:25px;
 font-size:24px;
@@ -338,4 +338,44 @@ QLabel#ModeLabel[active="false"] {
 color:#777777;
 font-weight:normal
 }
-""")
+QComboBox {
+background-color: #000000;
+color: #00ff22;
+border: 1px solid #00ff22;
+border-radius: 8px;
+padding: 6px 12px;
+min-height: 30px;
+font-family: "Share Tech Mono", monospace;
+}
+QComboBox:hover {
+background-color: rgba(0, 255, 0, 0.1);
+border: 1px solid #00ff22;
+}
+QComboBox::drop-down {
+border: none;
+width: 30px;
+}
+QComboBox QAbstractItemView {
+background-color: #000000;
+border: 1.5px solid #00ff22;
+border-radius: 8px;
+selection-background-color: #00ff22;
+selection-color: #000000;
+outline: none;
+padding: 4px;
+font-family: "Share Tech Mono", monospace;
+}
+QComboBox QAbstractItemView::item {
+padding: 10px;
+border-radius: 4px;
+color: #00ff22;
+}
+QComboBox QAbstractItemView::item:selected {
+background-color: #00ff22;
+color: #000000;
+}
+
+"""
+
+def register():
+    return HackerTheme()
